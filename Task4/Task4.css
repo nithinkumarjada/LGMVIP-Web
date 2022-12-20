@@ -1,0 +1,65 @@
+*{
+    margin:0;padding:0;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+body{
+    min-height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Z8yRtbx_7sLTd5T586VbDzJUgFhjGJT-ZA&usqp=CAU);
+    background-size: cover;
+}
+.calci{
+    width: 300px;
+    height: 420px;
+    background:-moz-linear-gradient();
+    border: 4px solid black;
+    overflow: hidden;
+    border-radius: 20px;
+}
+button{
+    margin:5px;
+    border: 1px solid black;
+    width:60px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.click-buttons{
+    padding: 4px;
+}
+.symbol{
+    background-color:#c7f2ce;
+    color: #d606a9;
+    border-radius: 30px;
+    border: 3px solid #91f2a1;
+}
+.number{
+    background-color: #91f2a1;
+    color: darkgreen;
+    border-radius: 20px;
+    border: 2px solid #91f2a1
+}
+.btn-equal{
+
+    background-color:#eff799;
+    color: #d606a9;
+    border-radius: 15px;
+    border: 3px solid #91f2a1;
+}
+.btn-clear{
+    background-color: rgb(104, 201, 243);
+    color: red;
+    border-radius: 10px;
+    border: 1.4px solid#d606a9;
+}

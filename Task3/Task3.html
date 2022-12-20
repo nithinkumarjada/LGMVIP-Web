@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrolled Form</title>
+    <link rel="stylesheet" href="Task3.css">
+</head>
+<body>
+    <div class="header">
+            <h1>Student Registration Form</h1>
+    </div>
+    <div class="content">
+        <div class="left">
+            <form id="form" name="regform" method="post" onsubmit="fun()">
+                <table>
+                    <tr>
+                        <td>Name</td>
+                        <td class="fr bc"><input class="d" type="text" name="name" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td class="fr bc"><input class="d" type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td class="fr bc"><input class="d" type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+                    </tr>
+                    <tr>
+                        <td>Image</td>
+                        <td class="fr bc"><input class="d" type="url" name="photo" id="photo"></td>
+                    </tr>
+                    <tr rowspan="2">
+                        <td>Gender</td>
+                        <td class="fr bc r"><span><input type="radio" class="gend" name="gender" id="Male"
+                                    value="Male">Male</span><span><input class="gend" type="radio" name="gender"
+                                    id="Female" value="Female">Female</span></td>
+                    </tr>
+                    <tr rowspan="3">
+                        <td>Skills</td>
+                        <td class="fr bc r">
+                            <span><input type="checkbox" name="skill" class="course" id="java" value="Java">Java </span>
+                            <span><input type="checkbox" name="skill" class="course" id="C" value="C">C </span>
+                            <span><input type="checkbox" name="skill"class="course" value="Python" id="Python">Python
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="fr1"><input class="lef jk" type="button" onclick="fun()" value="Submit">
+                        </td>
+                     
+                        <td  class="fr2"><input class="lef sr" type="reset" value="Reset"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="verticalLine">
+
+        </div>
+        <div class="right" id="c">
+            <h3>Enrolled Students</h3>
+            <div class="ss" id="ss">
+           
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="Task3.js"></script>
+</body>
+</html>
